@@ -27,17 +27,17 @@ function ingresarNotas() {
 
 
         while (isNaN(nota) || nota < 0 || nota > 10) {
-            // nota = parseFloat(prompt(`Ingrese una nota válida entre 0 y 10 para la nota ${i} de ${nombre} ${apellido}:`));
+            
             nota = parseFloat(prompt("Ingrese una nota válida entre 0 y 10 para la nota " + x + " de " + nombre +  " " + apellido));
         }
 
         sumaNotas += nota;
     }
 
-    // Calcular el promedio
+
     let promedio = sumaNotas / cantidadNotas;
 
-    // Mostrar el resultado
+
     alert("El promedio de " + nombre + " " + apellido + " es " + promedio.toFixed(2));
 
     if (promedio >= 6) {
@@ -49,6 +49,6 @@ function ingresarNotas() {
     ingresarNotas()
 }
 
-// Llamar a la función para iniciar el proceso de ingreso de notas
+
 ingresarNotas();
 
